@@ -76,6 +76,8 @@ sudo git clone https://github.com/qbic-platform/sentinel.git
 
 cd sentinel
 
+mkdir database
+
 export LC_ALL=C
 
 sudo apt-get install -y virtualenv
