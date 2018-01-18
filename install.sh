@@ -86,11 +86,11 @@ virtualenv venv
 
 venv/bin/pip install -r requirements.txt
 
-echo "qbic_conf=/root/.qbiccore/qbic.conf" >> /root/. qbiccore/sentinel/sentinel.conf
+echo "qbic_conf=/root/.qbiccore/qbic.conf" >> /root/.qbiccore/sentinel/sentinel.conf
 
 crontab -l > tempcron
 
-echo "* * * * * cd /root/. qbiccore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log" >> tempcron
+echo "* * * * * cd /root/.qbiccore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log" >> tempcron
 
 crontab tempcron
 
